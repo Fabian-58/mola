@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Página de inicio moderna y responsiva">
+        <title>Capacitaciones - Mola Estudio</title>
+        <!-- Enlace a Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Enlace a un estilo personalizado -->
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="js/script.js">
+        
+        <link rel="icon" type="image/png" href="img/favicon.png">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+        <!-- Agregar Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        
+    
+
+    </head>
+
+    <body>
+        <div class="agenda-container" style="background-color: #15a1b4; padding: 10px 20px; color: white;">
+            <div class="container" style="display: flex; justify-content: flex-end;">
+                <a href="https://api.whatsapp.com/message/5HLFGJOZLLRAO1?autoload=1&app_absent=0" class="agenda-text" target="_blank" style="font-size: 18px; font-weight: bold; color: white; text-decoration: none; display: flex; align-items: center; margin-left: auto;" onmouseover="this.style.color='#f3a005'" onmouseout="this.style.color='white'">
+                    <img src="img/calendario.png" alt="WhatsApp" class="agenda-icon" style="width: 20px; height: 20px; margin-right: 10px;"> ¡Agenda tu cita aquí!
+                </a>
+            </div>
+        </div>
+        
+        
+         <!-- Navbar -->
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <!-- Botón Toggler para abrir el menú lateral -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Título -->
+                <img src="img/h1.png" alt="Mola Estudio" style="width: 100%; max-width: 300px; position: relative; left: -60px;">
+
+                <!-- Menú normal (visible en pantallas grandes) -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto flex-column flex-lg-row">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="inicio.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Servicios
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="capilares.html">Capilares</a></li>
+                                <li><a class="dropdown-item" href="corporales.html">Corporales</a></li>
+                                <li><a class="dropdown-item" href="faciales.html">Faciales</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="equipodetrabajo.html">Equipo de Trabajo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="capacitaciones.html">Capacitaciones</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Menú lateral (offcanvas) -->
+        <div class="offcanvas offcanvas-start w-50" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel" style="background-color: #15a1b4;">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasMenuLabel" style="font-family: Arial, sans-serif; font-size: 35px; color: #ffffff;">🤍</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar" style="background-color: white; border: 1px solid transparent;" onmouseover="this.style.backgroundColor='#f8f9fa'" onmouseout="this.style.backgroundColor='white'" onclick="this.style.backgroundColor='#fd7e14'">
+                </button>
+            </div>
+            <div class="offcanvas-body" style="font-family: sans-serif; font-size: 26px; color: #ffffff !important;">
+                <ul class="list-unstyled" style="font-family: 'Bochan Serif', serif;">
+                    <li class="mb-3"><a href="inicio.html" class="text-decoration-none" style="color: white;">Inicio</a></li>
+                    <li class="mb-3 dropdown">
+                        <a class="text-decoration-none dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                            Servicios
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown" style="background-color: #0eb9cf;">
+                            <li><a class="dropdown-item" href="capilares.html" style="color: white;">Capilares</a></li>
+                            <li><a class="dropdown-item" href="corporales.html" style="color: white;">Corporales</a></li>
+                            <li><a class="dropdown-item" href="faciales.html" style="color: white;">Faciales</a></li>
+                        </ul>
+                    </li>
+                    <li class="mb-3"><a href="equipodetrabajo.html" class="text-decoration-none" style="color: white;">Equipo de Trabajo</a></li>
+                    <li class="mb-3"><a href="tienda.html" class="text-decoration-none" style="color: white;">Tienda</a></li>
+                    <li class="mb-3"><a href="contacto.html" class="text-decoration-none" style="color: white;">Contacto</a></li>
+                    <li class="mb-3"><a href="capacitaciones.html" class="text-decoration-none" style="color: white;">Capacitaciones</a></li>
+                </ul>
+       
+
+                <br>
+                
+                <br>
+
+                <!-- Redes sociales al final del menú -->
+                <div class="social-icons" style="margin-top: 30px;">
+                    <a href="https://web.facebook.com/Molasalon?mibextid=ZbWKwL&_rdc=1&_rdr" target="_blank" style="color: white; font-size: 30px; margin-right: 20px; transition: color 0.3s;" onmouseover="this.style.color='#fd7e14'" onmouseout="this.style.color='white'">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/molasalonibague?igsh=em52azNiaXE3dWZ0" target="_blank" style="color: white; font-size: 30px; margin-right: 20px; transition: color 0.3s;" onmouseover="this.style.color='#fd7e14'" onmouseout="this.style.color='white'">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://api.whatsapp.com/message/5HLFGJOZLLRAO1?autoload=1&app_absent=0" target="_blank" style="color: white; font-size: 30px; transition: color 0.3s;" onmouseover="this.style.color='#fd7e14'" onmouseout="this.style.color='white'">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Sección Hero -->
+        <section class="hero" style="background-color: #38d7dd; display: flex; align-items: center; justify-content: center; padding: 20px 0; margin: 0;">
+            <!-- Logo y Título -->
+            <div style="display: flex; align-items: center;">
+                <!-- Logo -->
+                <img src="img/logo.PNG" alt="Logo Mola Estudio" style="max-width: 100px; margin-right: 15px;">
+                <!-- Título -->
+                <h1 style="font-size: 3rem; font-family: 'Bochan Serif', serif; margin: 0;">CURSOS</h1>
+            </div>
+        </section>
+
+     
+    
+        <!-- Carrusel adaptable -->
+        <div id="carouselCursos" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/carucel2.PNG" class="d-block w-100" alt="Curso 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/carucel3.PNG" class="d-block w-100" alt="Curso 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/carucel4.PNG" class="d-block w-100" alt="Curso 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCursos" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselCursos" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+
+        <style>
+            /* Ajustes para que el carrusel sea responsivo */
+            #carouselCursos img {
+                max-height: 500px;
+                object-fit: cover;
+            }
+            
+            @media (max-width: 768px) {
+                #carouselCursos img {
+                    max-height: 300px;
+                }
+            }
+        </style>
+        <!-- Carrusel adaptable a todas las pantallas -->
+
+    
+
+
+        <!-- Sección adicional -->
+        <section style="text-align: center; padding: 50px; background: linear-gradient(135deg, #15a1b4, #0e87a1); color: white; border-radius: 10px; margin: 40px auto; max-width: 900px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
+            <h2 style="font-family: 'Merriweather', serif; font-size: 2.5rem; margin-bottom: 15px;">¡Aprende, Crece y Transforma!</h2>
+            <p style="font-size: 18px; max-width: 800px; margin: auto; line-height: 1.6;">Nuestros cursos están diseñados para brindarte conocimientos prácticos y herramientas innovadoras para impulsar tu carrera en el mundo de la belleza. ¡Inscríbete y lleva tu talento al siguiente nivel!</p>
+            <a href="contacto.html" style="display: inline-block; margin-top: 20px; padding: 12px 25px; background-color: #f3a005; color: white; font-size: 18px; font-weight: bold; text-decoration: none; border-radius: 5px; transition: 0.3s;" onmouseover="this.style.backgroundColor='#d98c04'" onmouseout="this.style.backgroundColor='#f3a005'">Inscríbete Ahora</a>
+        </section>
+
+                
+        <section onmouseover="startFireworks()" onmouseout="stopFireworks()" style="background: linear-gradient(135deg, #15a1b4, #0e87a1); padding: 50px 20px; color: white; text-align: center; border-radius: 10px; margin: 40px auto; max-width: 900px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
+            <h2 style="font-family: 'Merriweather', serif; font-size: 2.5rem; margin-bottom: 20px;">¡Obtén tu Diploma!</h2>
+            <p style="font-size: 18px; margin-bottom: 30px; line-height: 1.6;">Al finalizar el curso, recibirás un diploma certificado que validará tus conocimientos y habilidades en el área de la belleza. ¡Demuestra tu talento y haz que todos lo reconozcan!</p>
+            
+            <!-- Imagen centrada con efecto de zoom -->
+            <div style="display: flex; justify-content: center;">
+                <img src="img/certificado.png" alt="Diploma de Certificación" class="certificado-img" style="max-width: 80%; height: auto; border-radius: 15px; box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);">
+            </div>
+        </section>
+        
+        <script>
+            // Aquí ya no es necesario JavaScript para el zoom, ya que se hace con CSS
+            // Solo dejarías el código para los fuegos artificiales, si es necesario.
+        </script>
+        
+        <style>
+            /* Estilo de la imagen del certificado */
+            .certificado-img {
+                max-width: 80%;
+                height: auto;
+                border-radius: 15px;
+                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+                transition: transform 0.3s ease-in-out;
+            }
+        
+            /* Efecto hover solo en la imagen del certificado */
+            .certificado-img:hover {
+                transform: scale(1.1); /* Efecto de aumento de tamaño */
+            }
+        </style>
+        
+        
+        <style>
+            /* Botón con imagen */
+            .moving-button {
+                position: fixed;
+                top: 60%; /* Centrado vertical */
+                left: 0; /* Pegado a la izquierda */
+                transform: translateY(-50%); /* Centrado ajustado */
+                width: 83px; /* Ancho del botón */
+                height: 83px; /* Alto del botón */
+                background-color: #2e4e53;
+                background-image: url('img/PQRS.PNG'); /* Ruta de la imagen */
+                background-size: contain; /* Mantiene la proporción sin perder calidad */
+                background-position: center; /* Centra la imagen */
+                background-repeat: no-repeat; /* Evita que la imagen se repita */
+                border: none; /* Sin bordes */
+                border-radius: 50%; /* Hace el botón circular */
+                cursor: pointer;
+                z-index: 999; /* Por encima de otros elementos */
+            }
+        
+            /* Contenedor de la imagen emergente */
+            .popup-container {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.8);
+                justify-content: center;
+                align-items: center;
+                z-index: 9999;
+                padding: 20px;
+            }
+        
+            /* Imagen emergente sin perder calidad */
+            .popup-container img {
+                width: auto;
+                height: auto;
+                max-width: 90vw; /* Hasta el 90% del ancho de la pantalla */
+                max-height: 85vh; /* Hasta el 85% de la altura de la pantalla */
+                border-radius: 5px;
+                object-fit: contain; /* Mantiene la calidad sin distorsionar */
+            }
+        
+            /* Botón de cierre */
+            .popup-container .close-btn {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                background-color: white;
+                color: black;
+                border: none;
+                border-radius: 50%;
+                font-size: 20px;
+                width: 35px;
+                height: 35px;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        
+            /* Ajustes específicos para móviles */
+            @media (max-width: 768px) {
+                .popup-container img {
+                    max-width: 95vw; /* Imagen más grande en móviles */
+                    max-height: 90vh; /* Más alta en móviles */
+                }
+            }
+        </style>
+        
+        <!-- Botón con imagen -->
+        <button class="moving-button" onclick="showPopup()"></button>
+        
+        <!-- Contenedor de la imagen emergente -->
+        <div class="popup-container" id="popup">
+            <button class="close-btn" onclick="closePopup()">×</button>
+            <img src="img/PQRSINFO.PNG" alt="Imagen emergente">
+        </div>
+        
+        <!-- Scripts -->
+        <script>
+            // Función para mostrar la imagen emergente
+            function showPopup() {
+                document.getElementById('popup').style.display = 'flex';
+            }
+        
+            // Función para cerrar la imagen emergente
+            function closePopup() {
+                document.getElementById('popup').style.display = 'none';
+            }
+        </script>
+        
+
+
+        
+        
+        <footer style="background-color: #15a1b4; color: white; padding: 20px 0;">
+            <div class="footer-container">
+                <!-- Información de contacto -->
+                <div class="footer-info">
+                    <h1 style="margin: 0; font-family: 'Bochan Serif', serif;">Mola Estudio</h1>
+                    <p>
+                        📍 Dirección: Calle 123, Ciudad XYZ<br>
+                        📞 Teléfono: +57 300 123 4567<br>
+                        ✉️ Correo: contacto@molasalon.com
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com" target="_blank" class="social-link">
+                            <i class="fab fa-facebook fa-lg"></i>
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" class="social-link">
+                            <i class="fab fa-instagram fa-lg"></i>
+                        </a>
+                        <a href="https://www.tiktok.com" target="_blank" class="social-link">
+                            <i class="fab fa-tiktok fa-lg"></i>
+                        </a>
+                    </div>
+                    <p class="footer-copy">© 2025 Mola Salón. Todos los derechos reservados.</p>
+                </div>
+
+                <!-- Imágenes con efecto de cambio de tamaño -->
+                <div class="footer-images">
+                    <img src="img/jefe.png" alt="Imagen Mola Salón" class="footer-img">
+                    <img src="img/jefa.png" alt="Imagen Mola Salón" class="footer-img">
+                </div>
+            </div>
+
+            <style>
+                .footer-container {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    max-width: 90%;
+                    margin: 0 auto;
+                }
+
+                .footer-info {
+                    text-align: left;
+                    max-width: 50%;
+                }
+
+                .footer-social {
+                    margin-top: 15px;
+                }
+
+                .social-link {
+                    color: white;
+                    margin: 0 10px;
+                    transition: color 0.3s ease;
+                }
+
+                .social-link:hover {
+                    color: orange;
+                }
+
+                .footer-copy {
+                    margin-top: 15px;
+                    font-size: 0.9em;
+                    font-family: 'Bochan Serif', serif;
+                }
+
+                .footer-images {
+                    max-width: 40%;
+                    text-align: center;
+                    display: flex;
+                    gap: 20px;
+                }
+
+                .footer-img {
+                    width: 150px;
+                    height: auto;
+                    border-radius: 10px;
+                    transition: transform 0.3s ease, width 0.3s ease;
+                }
+
+                .footer-img:hover {
+                    transform: scale(1.1);
+                }
+
+                @media (max-width: 768px) {
+                    .footer-container {
+                        flex-direction: column;
+                        text-align: center;
+                    }
+
+                    .footer-info {
+                        max-width: 100%;
+                        text-align: center;
+                    }
+
+                    .footer-images {
+                        max-width: 100%;
+                        justify-content: center;
+                        gap: 10px;
+                    }
+
+                    .footer-img {
+                        width: 80px;
+                    }
+
+                    .footer-img:hover {
+                        width: 120px;
+                    }
+                }
+            </style>
+        </footer>
+
+            
+            
+
+       
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+
+</html>

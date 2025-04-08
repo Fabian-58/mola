@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Página de inicio moderna y responsiva">
+        <title>Inicio - Mola Estudio</title>
+        <!-- Enlace a Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Enlace a un estilo personalizado -->
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="">
+        
+        <link rel="icon" type="image/png" href="img/favicon.png">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+        <!-- Agregar Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    </head>
+
+    <body>  
+        <div class="agenda-container">
+            <div class="container text-end">
+                <a href="https://api.whatsapp.com/message/5HLFGJOZLLRAO1?autoload=1&app_absent=0" class="agenda-text" target="_blank">
+                    <img src="img/calendario.png" alt="WhatsApp" class="agenda-icon"> ¡Agenda tu cita aquí!
+                </a>
+            </div>
+        </div>
+       
+           <!-- Navbar -->
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <!-- Botón Toggler para abrir el menú lateral -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Título -->
+                <div class="mola-container">
+                    <img src="img/h1.png" alt="Mola Estudio">
+                </div>
+
+                <!-- Menú normal (visible en pantallas grandes) -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto flex-column flex-lg-row">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="inicio.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Servicios
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="capilares.html">Capilares</a></li>
+                                <li><a class="dropdown-item" href="corporales.html">Corporales</a></li>
+                                <li><a class="dropdown-item" href="faciales.html">Faciales</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="equipodetrabajo.html">Equipo de Trabajo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="capacitaciones.html">Capacitaciones</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Menú lateral (offcanvas) -->
+        <div class="offcanvas offcanvas-start w-50" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel" style="background-color: #15a1b4;">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasMenuLabel" style="font-family: Arial, sans-serif; font-size: 35px; color: #ffffff;">🤍</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar" style="background-color: white; border: 1px solid transparent;" onmouseover="this.style.backgroundColor='#f8f9fa'" onmouseout="this.style.backgroundColor='white'" onclick="this.style.backgroundColor='#fd7e14'">
+                </button>
+            </div>
+            <div class="offcanvas-body" style="font-family: sans-serif; font-size: 26px; color: #ffffff !important;">
+                <ul class="list-unstyled" style="font-family: 'Bochan Serif', serif;">
+                    <li class="mb-3"><a href="inicio.html" class="text-decoration-none" style="color: white;">Inicio</a></li>
+                    <li class="mb-3 dropdown">
+                        <a class="text-decoration-none dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                            Servicios
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown" style="background-color: #0eb9cf;">
+                            <li><a class="dropdown-item" href="capilares.html" style="color: white;">Capilares</a></li>
+                            <li><a class="dropdown-item" href="corporales.html" style="color: white;">Corporales</a></li>
+                            <li><a class="dropdown-item" href="faciales.html" style="color: white;">Faciales</a></li>
+                        </ul>
+                    </li>
+                    <li class="mb-3"><a href="equipodetrabajo.html" class="text-decoration-none" style="color: white;">Equipo de Trabajo</a></li>
+                    <li class="mb-3"><a href="tienda.html" class="text-decoration-none" style="color: white;">Tienda</a></li>
+                    <li class="mb-3"><a href="contacto.html" class="text-decoration-none" style="color: white;">Contacto</a></li>
+                    <li class="mb-3"><a href="capacitaciones.html" class="text-decoration-none" style="color: white;">Capacitaciones</a></li>
+                </ul>
+       
+
+                <br>
+                
+                <br>
+
+                <!-- Redes sociales al final del menú -->
+                <div class="social-icons" style="margin-top: 30px;">
+                    <a href="https://web.facebook.com/Molasalon?mibextid=ZbWKwL&_rdc=1&_rdr" target="_blank" style="color: white; font-size: 30px; margin-right: 20px; transition: color 0.3s;" onmouseover="this.style.color='#fd7e14'" onmouseout="this.style.color='white'">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/molasalonibague?igsh=em52azNiaXE3dWZ0" target="_blank" style="color: white; font-size: 30px; margin-right: 20px; transition: color 0.3s;" onmouseover="this.style.color='#fd7e14'" onmouseout="this.style.color='white'">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://api.whatsapp.com/message/5HLFGJOZLLRAO1?autoload=1&app_absent=0" target="_blank" style="color: white; font-size: 30px; transition: color 0.3s;" onmouseover="this.style.color='#fd7e14'" onmouseout="this.style.color='white'">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Sección Hero -->
+        <section class="hero" style="background-color: #38d7dd; display: flex; align-items: center; justify-content: center; padding: 20px 0; margin: 0;">
+            <!-- Logo y Título -->
+            <div style="display: flex; align-items: center;">
+                <!-- Logo -->
+                <img src="img/logo.PNG" alt="Logo Mola Estudio" style="max-width: 100px; margin-right: 15px;">
+                <!-- Título -->
+                <h1 style="font-size: 3rem; font-family: 'Bochan Serif', serif; margin: 0;">INICIO</h1>
+            </div>
+        </section>
+        
+       
+
+        <!--  carucel -->
+
+
+      
+
+
+
+
+        <br>
+
+       <!-- Propuestas de Belleza con Video -->
+        <section class="beauty-offers-video py-5" style="background-color: #ffffff; color: #333;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Propuestas de Belleza -->
+                    <div class="col-md-6 text-center text-md-start">
+                        <h2 class="mb-4" style="font-size: 2.5rem; font-family: 'Bochan Serif', serif; color: #000000;">
+                            Sumérgete en Nuestras Propuestas de Belleza
+                        </h2>
+                        <ul class="list-unstyled" style="font-size: 1.5rem; line-height: 2.5; font-family: 'Arial', sans-serif;">
+                            <li>Corte de cabello</li>
+                            <li>Maquillaje profesional</li>
+                            <li>Tratamientos faciales y corporales</li>
+                            <li>Depilación y manicura</li>
+                            <li>Extensiones de pestañas</li>
+                            <li>Capacitaciones de belleza</li>
+                        </ul>
+                    </div>
+                    <!-- Video -->
+                    <div class="col-md-6 text-center mt-4 mt-md-0">
+                        <video controls width="100%" height="315" style="border-radius: 10px;">
+                            <source src="ruta/a/tu-video.mp4" type="video/mp4">
+                            <!-- Mensaje para navegadores no compatibles -->
+                            Tu navegador no soporta la reproducción de video.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <br>
+        <!-- foto de servicios -->
+
+        <style>
+            img {
+              display: block;
+              margin: 0 auto;
+              width: 100%; /* Ajusta el tamaño al 100% del contenedor */
+              max-width: 1000px; /* Limita el tamaño máximo de la imagen */
+              height: auto; /* Mantiene la proporción */
+            }
+        </style>
+          
+        <img src="img/servicios.PNG" alt="Descripción de la imagen" />
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!-- Promociones -->
+
+        <h1 class="titulo-navidad">Promociones Navideñas</h1>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+
+        <div class="promociones">
+            <div class="promocion">
+                <img src="img/combo1.PNG" alt="Promoción 1" />
+            </div>
+            <div class="promocion">
+                <img src="img/combo2.PNG" alt="Promoción 2" />
+            </div>
+            <div class="promocion">
+                <img src="img/combo3.PNG" alt="Promoción 3" />
+            </div>
+            <div class="promocion">
+                <img src="img/combo4.PNG" alt="Promoción 4" />
+            </div>
+            <div class="promocion">
+                <img src="img/combo5.PNG" alt="Promoción 5" />
+            </div>
+            <div class="promocion">
+                <img src="img/combo7.PNG" alt="Promoción 6" />
+            </div>
+        </div>
+        
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+     
+
+
+        
+        <style>
+            /* Botón con imagen */
+            .moving-button {
+                position: fixed;
+                top: 60%; /* Centrado vertical */
+                left: 0; /* Pegado a la izquierda */
+                transform: translateY(-50%); /* Centrado ajustado */
+                width: 83px; /* Ancho del botón */
+                height: 83px; /* Alto del botón */
+                background-color: #2e4e53;
+                background-image: url('img/PQRS.PNG'); /* Ruta de la imagen */
+                background-size: contain; /* Mantiene la proporción sin perder calidad */
+                background-position: center; /* Centra la imagen */
+                background-repeat: no-repeat; /* Evita que la imagen se repita */
+                border: none; /* Sin bordes */
+                border-radius: 50%; /* Hace el botón circular */
+                cursor: pointer;
+                z-index: 999; /* Por encima de otros elementos */
+            }
+        
+            /* Contenedor de la imagen emergente */
+            .popup-container {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.8);
+                justify-content: center;
+                align-items: center;
+                z-index: 9999;
+                padding: 20px;
+            }
+        
+            /* Imagen emergente sin perder calidad */
+            .popup-container img {
+                width: auto;
+                height: auto;
+                max-width: 90vw; /* Hasta el 90% del ancho de la pantalla */
+                max-height: 85vh; /* Hasta el 85% de la altura de la pantalla */
+                border-radius: 5px;
+                object-fit: contain; /* Mantiene la calidad sin distorsionar */
+            }
+        
+            /* Botón de cierre */
+            .popup-container .close-btn {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                background-color: white;
+                color: black;
+                border: none;
+                border-radius: 50%;
+                font-size: 20px;
+                width: 35px;
+                height: 35px;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        
+            /* Ajustes específicos para móviles */
+            @media (max-width: 768px) {
+                .popup-container img {
+                    max-width: 95vw; /* Imagen más grande en móviles */
+                    max-height: 90vh; /* Más alta en móviles */
+                }
+            }
+        </style>
+        
+        <!-- Botón con imagen -->
+        <button class="moving-button" onclick="showPopup()"></button>
+        
+        <!-- Contenedor de la imagen emergente -->
+        <div class="popup-container" id="popup">
+            <button class="close-btn" onclick="closePopup()">×</button>
+            <img src="img/PQRSINFO.PNG" alt="Imagen emergente">
+        </div>
+        
+        <!-- Scripts -->
+        <script>
+            // Función para mostrar la imagen emergente
+            function showPopup() {
+                document.getElementById('popup').style.display = 'flex';
+            }
+        
+            // Función para cerrar la imagen emergente
+            function closePopup() {
+                document.getElementById('popup').style.display = 'none';
+            }
+        </script>
+        
+       
+
+      
+
+
+        <footer style="background-color: #15a1b4; color: white; padding: 20px 0;">
+            <div class="footer-container">
+                <!-- Información de contacto -->
+                <div class="footer-info">
+                    <h1 style="margin: 0; font-family: 'Bochan Serif', serif;">Mola Estudio</h1>
+                    <p>
+                        📍 Dirección: Calle 123, Ciudad XYZ<br>
+                        📞 Teléfono: +57 300 123 4567<br>
+                        ✉️ Correo: contacto@molasalon.com
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com" target="_blank" class="social-link">
+                            <i class="fab fa-facebook fa-lg"></i>
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" class="social-link">
+                            <i class="fab fa-instagram fa-lg"></i>
+                        </a>
+                        <a href="https://www.tiktok.com" target="_blank" class="social-link">
+                            <i class="fab fa-tiktok fa-lg"></i>
+                        </a>
+                    </div>
+                    <p class="footer-copy">© 2025 Mola Salón. Todos los derechos reservados.</p>
+                </div>
+
+                <!-- Imágenes con efecto de cambio de tamaño -->
+                <div class="footer-images">
+                    <img src="img/jefe.png" alt="Imagen Mola Salón" class="footer-img">
+                    <img src="img/jefa.png" alt="Imagen Mola Salón" class="footer-img">
+                </div>
+            </div>
+
+            <style>
+                .footer-container {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    max-width: 90%;
+                    margin: 0 auto;
+                }
+
+                .footer-info {
+                    text-align: left;
+                    max-width: 50%;
+                }
+
+                .footer-social {
+                    margin-top: 15px;
+                }
+
+                .social-link {
+                    color: white;
+                    margin: 0 10px;
+                    transition: color 0.3s ease;
+                }
+
+                .social-link:hover {
+                    color: orange;
+                }
+
+                .footer-copy {
+                    margin-top: 15px;
+                    font-size: 0.9em;
+                    font-family: 'Bochan Serif', serif;
+                }
+
+                .footer-images {
+                    max-width: 40%;
+                    text-align: center;
+                    display: flex;
+                    gap: 20px;
+                }
+
+                .footer-img {
+                    width: 150px;
+                    height: auto;
+                    border-radius: 10px;
+                    transition: transform 0.3s ease, width 0.3s ease;
+                }
+
+                .footer-img:hover {
+                    transform: scale(1.1);
+                }
+
+                @media (max-width: 768px) {
+                    .footer-container {
+                        flex-direction: column;
+                        text-align: center;
+                    }
+
+                    .footer-info {
+                        max-width: 100%;
+                        text-align: center;
+                    }
+
+                    .footer-images {
+                        max-width: 100%;
+                        justify-content: center;
+                        gap: 10px;
+                    }
+
+                    .footer-img {
+                        width: 80px;
+                    }
+
+                    .footer-img:hover {
+                        width: 120px;
+                    }
+                }
+            </style>
+        </footer>
+
+
+
+
+
+
+
+
+
+        <!-- Agregar los íconos (si usas Font Awesome) -->
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+        <!-- Scripts de Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+
+</html>

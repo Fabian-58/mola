@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Página de inicio moderna y responsiva">
+        <title>Contacto - Mola Estudio</title>
+        <!-- Enlace a Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Enlace a un estilo personalizado -->
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="js/script.js">
+        
+        <link rel="icon" type="image/png" href="img/favicon.png">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+        <!-- Agregar Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        
+    
+
+    </head>
+
+    <body>
+        <div class="agenda-container" style="background-color: #15a1b4; padding: 10px 20px; color: white;">
+            <div class="container" style="display: flex; justify-content: flex-end;">
+                <a href="https://api.whatsapp.com/message/5HLFGJOZLLRAO1?autoload=1&app_absent=0" class="agenda-text" target="_blank" style="font-size: 18px; font-weight: bold; color: white; text-decoration: none; display: flex; align-items: center; margin-left: auto;" onmouseover="this.style.color='#f3a005'" onmouseout="this.style.color='white'">
+                    <img src="img/calendario.png" alt="WhatsApp" class="agenda-icon" style="width: 20px; height: 20px; margin-right: 10px;"> ¡Agenda tu cita aquí!
+                </a>
+            </div>
+        </div>
+        
+        
+         <!-- Navbar -->
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <!-- Botón Toggler para abrir el menú lateral -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Título -->
+                <img src="img/h1.png" alt="Mola Estudio" style="width: 100%; max-width: 300px; position: relative; left: -60px;">
+
+                <!-- Menú normal (visible en pantallas grandes) -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto flex-column flex-lg-row">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="inicio.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Servicios
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="capilares.html">Capilares</a></li>
+                                <li><a class="dropdown-item" href="corporales.html">Corporales</a></li>
+                                <li><a class="dropdown-item" href="faciales.html">Faciales</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="equipodetrabajo.html">Equipo de Trabajo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="capacitaciones.html">Capacitaciones</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Menú lateral (offcanvas) -->
+        <div class="offcanvas offcanvas-start w-50" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel" style="background-color: #15a1b4;">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasMenuLabel" style="font-family: Arial, sans-serif; font-size: 35px; color: #ffffff;">🤍</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar" style="background-color: white; border: 1px solid transparent;" onmouseover="this.style.backgroundColor='#f8f9fa'" onmouseout="this.style.backgroundColor='white'" onclick="this.style.backgroundColor='#fd7e14'">
+                </button>
+            </div>
+            <div class="offcanvas-body" style="font-family: sans-serif; font-size: 26px; color: #ffffff !important;">
+                <ul class="list-unstyled" style="font-family: 'Bochan Serif', serif;">
+                    <li class="mb-3"><a href="inicio.html" class="text-decoration-none" style="color: white;">Inicio</a></li>
+                    <li class="mb-3 dropdown">
+                        <a class="text-decoration-none dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                            Servicios
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown" style="background-color: #0eb9cf;">
+                            <li><a class="dropdown-item" href="capilares.html" style="color: white;">Capilares</a></li>
+                            <li><a class="dropdown-item" href="corporales.html" style="color: white;">Corporales</a></li>
+                            <li><a class="dropdown-item" href="faciales.html" style="color: white;">Faciales</a></li>
+                        </ul>
+                    </li>
+                    <li class="mb-3"><a href="equipodetrabajo.html" class="text-decoration-none" style="color: white;">Equipo de Trabajo</a></li>
+                    <li class="mb-3"><a href="tienda.html" class="text-decoration-none" style="color: white;">Tienda</a></li>
+                    <li class="mb-3"><a href="contacto.html" class="text-decoration-none" style="color: white;">Contacto</a></li>
+                    <li class="mb-3"><a href="capacitaciones.html" class="text-decoration-none" style="color: white;">Capacitaciones</a></li>
+                </ul>
+       
+
+                <br>
+                
+                <br>
+
+                <!-- Redes sociales al final del menú -->
+                <div class="social-icons" style="margin-top: 30px;">
+                    <a href="https://web.facebook.com/Molasalon?mibextid=ZbWKwL&_rdc=1&_rdr" target="_blank" style="color: white; font-size: 30px; margin-right: 20px; transition: color 0.3s;" onmouseover="this.style.color='#fd7e14'" onmouseout="this.style.color='white'">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/molasalonibague?igsh=em52azNiaXE3dWZ0" target="_blank" style="color: white; font-size: 30px; margin-right: 20px; transition: color 0.3s;" onmouseover="this.style.color='#fd7e14'" onmouseout="this.style.color='white'">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://api.whatsapp.com/message/5HLFGJOZLLRAO1?autoload=1&app_absent=0" target="_blank" style="color: white; font-size: 30px; transition: color 0.3s;" onmouseover="this.style.color='#fd7e14'" onmouseout="this.style.color='white'">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Sección Hero -->
+        <section class="hero" style="background-color: #38d7dd; display: flex; align-items: center; justify-content: center; padding: 20px 0; margin: 0;">
+            <!-- Logo y Título -->
+            <div style="display: flex; align-items: center;">
+                <!-- Logo -->
+                <img src="img/logo.PNG" alt="Logo Mola Estudio" style="max-width: 100px; margin-right: 15px;">
+                <!-- Título -->
+                <h1 style="font-size: 3rem; font-family: 'Bochan Serif', serif; margin: 0;">CONTACTO</h1>
+            </div>
+        </section>
+
+
+
+        <style>
+            /* Botón con imagen */
+            .moving-button {
+                position: fixed;
+                top: 60%; /* Centrado vertical */
+                left: 0; /* Pegado a la izquierda */
+                transform: translateY(-50%); /* Centrado ajustado */
+                width: 83px; /* Ancho del botón */
+                height: 83px; /* Alto del botón */
+                background-color: #2e4e53;
+                background-image: url('img/PQRS.PNG'); /* Ruta de la imagen */
+                background-size: contain; /* Mantiene la proporción sin perder calidad */
+                background-position: center; /* Centra la imagen */
+                background-repeat: no-repeat; /* Evita que la imagen se repita */
+                border: none; /* Sin bordes */
+                border-radius: 50%; /* Hace el botón circular */
+                cursor: pointer;
+                z-index: 999; /* Por encima de otros elementos */
+            }
+        
+            /* Contenedor de la imagen emergente */
+            .popup-container {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.8);
+                justify-content: center;
+                align-items: center;
+                z-index: 9999;
+                padding: 20px;
+            }
+        
+            /* Imagen emergente sin perder calidad */
+            .popup-container img {
+                width: auto;
+                height: auto;
+                max-width: 90vw; /* Hasta el 90% del ancho de la pantalla */
+                max-height: 85vh; /* Hasta el 85% de la altura de la pantalla */
+                border-radius: 5px;
+                object-fit: contain; /* Mantiene la calidad sin distorsionar */
+            }
+        
+            /* Botón de cierre */
+            .popup-container .close-btn {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                background-color: white;
+                color: black;
+                border: none;
+                border-radius: 50%;
+                font-size: 20px;
+                width: 35px;
+                height: 35px;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        
+            /* Ajustes específicos para móviles */
+            @media (max-width: 768px) {
+                .popup-container img {
+                    max-width: 95vw; /* Imagen más grande en móviles */
+                    max-height: 90vh; /* Más alta en móviles */
+                }
+            }
+        </style>
+        
+        <!-- Botón con imagen -->
+        <button class="moving-button" onclick="showPopup()"></button>
+        
+        <!-- Contenedor de la imagen emergente -->
+        <div class="popup-container" id="popup">
+            <button class="close-btn" onclick="closePopup()">×</button>
+            <img src="img/PQRSINFO.PNG" alt="Imagen emergente">
+        </div>
+        
+        <!-- Scripts -->
+        <script>
+            // Función para mostrar la imagen emergente
+            function showPopup() {
+                document.getElementById('popup').style.display = 'flex';
+            }
+        
+            // Función para cerrar la imagen emergente
+            function closePopup() {
+                document.getElementById('popup').style.display = 'none';
+            }
+        </script>
+        
+
+
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+
+</html>

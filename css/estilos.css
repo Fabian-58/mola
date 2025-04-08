@@ -1,0 +1,221 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    background-color: #f8f9fa;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    color: #ffffff;
+}
+
+.features {
+    padding: 30px 20px;
+}
+
+.footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+/* Fondo azul y texto a la derecha */
+.agenda-container {
+    background-color: #15a1b4; /* Fondo azul */
+    padding: 10px 20px; /* Espaciado alrededor del texto */
+    color: white; /* Color del texto (blanco para contraste) */
+}
+
+/* Estilo para el texto */
+.agenda-text {
+    font-size: 18px; /* Tamaño del texto */
+    font-weight: bold; /* Hacer el texto más destacado */
+    color: white; /* Color blanco para el texto del enlace */
+    text-decoration: none; /* Elimina el subrayado por defecto del enlace */
+}
+
+/* Efecto cuando el enlace está siendo hover (cuando el usuario pasa el cursor) */
+.agenda-text:hover {
+    color: #f3a005; /* Cambia el color a dorado cuando el usuario pasa el cursor */
+}
+
+
+.agenda-text {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.agenda-text .agenda-icon {
+    width: 20px; /* Ajusta el tamaño del ícono */
+    height: 20px;
+    margin-right: 8px; /* Ajusta el espacio entre el ícono y el texto */
+}
+
+
+
+
+
+
+
+
+/* Aplicar Bochan Serif y tamaño de 25px a los enlaces del navbar */
+.navbar-nav .nav-link {
+    font-family: 'Bochan Serif', serif; /* Fuente Bochan Serif */
+    font-size: 25px; /* Tamaño de la fuente */
+    color: black; /* Color del texto, puedes ajustarlo si lo prefieres */
+    text-decoration: none; /* Sin subrayado */
+}
+
+/* Aplicar Bochan Serif y tamaño de 25px a los enlaces dentro del menú desplegable */
+.dropdown-menu .dropdown-item {
+    font-family: 'Bochan Serif', serif; /* Fuente Bochan Serif */
+    font-size: 25px; /* Tamaño de la fuente */
+    color: black; /* Color del texto, puedes ajustarlo si lo prefieres */
+    text-decoration: none; /* Sin subrayado */
+}
+
+/* Efecto cuando el usuario pasa el cursor sobre los enlaces del navbar */
+.navbar-nav .nav-link:hover {
+    color: #f3a005; /* Cambia el color cuando se pasa el cursor */
+}
+
+/* Efecto cuando el usuario pasa el cursor sobre los enlaces del menú desplegable */
+.dropdown-menu .dropdown-item:hover {
+    color: #f3a005; /* Cambia el color cuando se pasa el cursor */
+}
+
+h1 {
+    font-family: 'Bochan Serif', serif;
+}
+
+
+
+/* Cambio de color a naranja al pasar el cursor */
+.offcanvas-body .list-unstyled li a:hover {
+    color: orange !important;
+}
+
+
+/* Desactivar el fondo azul oscuro cuando se hace clic en los elementos */
+.dropdown-item:active {
+    background-color: transparent !important; /* Fondo transparente al hacer clic */
+    color: white !important; /* Mantener el color de texto blanco */
+}
+
+
+
+
+
+
+
+
+
+.promociones {
+    display: grid;
+    gap: 20px; /* Espacio entre imágenes */
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas grandes */
+    justify-items: center;
+}
+
+.promocion {
+    position: relative;
+    width: auto;
+    max-width: 70%; /* Ajusta el tamaño de la imagen */
+    overflow: hidden;
+    border-radius: 10px; /* Bordes redondeados */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+}
+
+.promocion img {
+    width: 100%; 
+    height: auto; 
+    object-fit: contain;
+}
+
+/* Efecto especial al pasar el mouse */
+.promocion:hover {
+    transform: translateY(-15px) rotate(-2deg) scale(1.05); /* Elevación + Rotación + Escala */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5); /* Sombra más profunda */
+    filter: brightness(1.2) saturate(1.1); /* Más brillo y color */
+}
+
+/* Media Query para pantallas móviles */
+@media (max-width: 768px) {
+    .promociones {
+        grid-template-columns: 1fr; /* Una columna en móviles */
+    }
+}
+
+
+
+
+.titulo-navidad {
+    font-family: 'Bochan Serif', serif; /* Aplica la tipografía */
+    font-size: 3rem; /* Tamaño del texto */
+    text-align: center; /* Centra horizontalmente */
+    margin-top: 20px; /* Espacio superior */
+    margin-bottom: 20px; /* Espacio inferior */
+    color: #000000; /* Cambia el color si lo deseas */
+}
+
+
+
+
+
+
+/* carucel */
+
+
+
+  
+/* carucel */
+
+
+footer a {
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color: gold; /* Resalta con un color dorado al pasar el mouse */
+}
+
+footer i {
+    font-size: 1.5em;
+}
+
+
+
+.mola-container img {
+    width: 100%;
+    max-width: 300px;
+    position: relative;
+    left: -60px;
+}
+
+
+
+
+/* Estilo de la imagen del certificado */
+.certificado-img {
+    max-width: 90%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Efecto hover solo en la imagen del certificado */
+.certificado-img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Solo cambia la sombra, sin mover la imagen */
+}
+
+/* El resto de las imágenes (logo, carrusel, etc.) no tendrán el efecto */
+
